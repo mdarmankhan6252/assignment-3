@@ -16,7 +16,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-   
+
    <!-- ------style--------- -->
    <style>
       *{
@@ -29,7 +29,108 @@
    </style>
    <title>Hockey Home page</title>
 </head>
-<body class="manrope">
+<body class="manrope mx-2">
+   <header class="container m-auto">
+      <!-- ---------nav----------->
+      <nav class="flex items-center justify-between py-8">
+         <div class="flex items-center">
+            <div class="dropdown block sm:hidden">
+               <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+               </div>
+               <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                 <li><a>Home</a></li>
+                 <li><a>About</a></li>
+                 <li><a>Pages</a></li>
+                 <li><a>Blog</a></li>
+                 <li><a>Contact</a></li>
+               </ul>
+            </div>
+            <h1 class="text-3xl font-semibold">Hockey<span class="text-red-500">'</span>s</h1>
+      
+         </div>
+         <div class="hidden sm:block">
+            <div class="flex">
+               <li class="list-none mx-5"><a class="font-semibold tex-[18px] text-[#FF4240]" href="#">Home</a></li>
+               <li class="list-none mx-5"><a class="font-semibold tex-[18px] hover:text-[#FF4240] transition-[0.5s]" href="#">About</a></li>
+               <li class="list-none mx-5"><a class="font-semibold tex-[18px] hover:text-[#FF4240] transition-[0.5s]" href="#">Pages</a></li>
+               <li class="list-none mx-5"><a class="font-semibold tex-[18px] hover:text-[#FF4240] transition-[0.5s]" href="#">Blog</a></li>
+               <li class="list-none mx-5"><a class="font-semibold tex-[18px] hover:text-[#FF4240] transition-[0.5s]" href="#">Contact</a></li>
+            </div>
+         </div>
+         <div class="flex items-center">
+            <div class="hidden sm:block"><i class="fa-solid fa-magnifying-glass mr-6 cursor-pointer text-xl text-gray-500 "></i></div>
+
+            <button class="border-2 border-[#FF4240] py-2 px-4 rounded-lg text-white bg-[#FF4240] hover:bg-transparent hover:text-black transition-[0.5s] font-semibold">Get Ticket</button>
+
+         </div>
+      </nav>
+      <!-- ---------banner---------- -->
+      <div class="carousel w-full mt-12">
+         <div id="slide1" class="carousel-item relative w-full">
+           <img src="img/1.png" class="w-full" />
+           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+             <a href="#slide4" class="btn btn-circle text-[#FF4240]">❮</a> 
+             <a href="#slide2" class="btn btn-circle text-[#FF4240]">❯</a>
+           </div>
+
+           <div class="w-[40%] p-6 sm:absolute bg-black rounded-2xl sm:right-5 sm:bottom-5 space-y-3">
+            <h3 class="text-white text-2xl">Meet all the heroes from the field</h3>
+            <p class="text-gray-300">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+           </div>
+         </div> 
+
+         <div id="slide2" class="carousel-item relative w-full">
+           <img src="img/banner-2.jpg" class="w-full rounded-xl" />
+           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+             <a href="#slide1" class="btn btn-circle text-[#FF4240]">❮</a> 
+             <a href="#slide3" class="btn btn-circle text-[#FF4240]">❯</a>
+           </div>
+           <div class="w-[40%] p-6 sm:absolute bg-black rounded-2xl sm:right-5 sm:bottom-5 space-y-3">
+            <h3 class="text-white text-2xl">Meet all the heroes from the field</h3>
+            <p class="text-gray-300">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+           </div>
+         </div> 
+         <div id="slide3" class="carousel-item relative w-full">
+           <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full rounded-xl" />
+           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+             <a href="#slide2" class="btn btn-circle text-[#FF4240]">❮</a> 
+             <a href="#slide4" class="btn btn-circle text-[#] text-[#FF4240]">❯</a>
+           </div>
+           <div class="w-[40%] p-6 sm:absolute bg-black rounded-2xl sm:right-5 sm:bottom-5 space-y-3">
+            <h3 class="text-white text-2xl">Meet all the heroes from the field</h3>
+            <p class="text-gray-300">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+           </div>
+         </div> 
+         <div id="slide4" class="carousel-item relative w-full">
+           <img src="img/1.png" class="w-full rounded-xl" />
+           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+             <a href="#slide3" class="btn btn-circle text-[#FF4240]">❮</a> 
+             <a href="#slide1" class="btn btn-circle text-[#FF4240]">❯</a>
+           </div>
+           <div class="w-[40%] p-6 sm:absolute bg-black rounded-2xl sm:right-5 sm:bottom-5 space-y-3">
+            <h3 class="text-white text-2xl">Meet all the heroes from the field</h3>
+            <p class="text-gray-300">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+           </div>
+         </div>
+       </div>
+
+       <div class="w-full p-6  bg-black rounded-2xl space-y-3 mt-5 visible sm:hidden">
+         <h3 class="text-white text-2xl">Meet all the heroes from the field</h3>
+         <p class="text-gray-300">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+
+        
+
+
+
+   </header>
+   <main>
+
+   </main>
+   <footer>
+
+   </footer>
    
 </body>
 </html>
